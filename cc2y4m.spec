@@ -1,4 +1,6 @@
+# TODO: optflags
 Summary:	Translates broken PAL signals to YUV4MPEG2
+Summary(pl):	T³umaczenie zepsutych sygna³ów PAL na YUV4MPEG2
 Name:		cc2y4m
 Version:	0.0.12
 Release:	1
@@ -11,7 +13,7 @@ BuildRequires:	bison
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Some channels broadcast a tv signal which is not standards compliant.
+Some channels broadcast a TV signal which is not standards compliant.
 It usually lacks sync pulses, gets inverted at random times and even
 may include disinformation. Those signals can't be comfortably viewed
 on a normal television set. The Brooktree 87[89](A) chip has a special
@@ -20,6 +22,18 @@ This program enables this mode, very much alike cabletv, and takes
 special measures to keep the image stable and adjust for the
 inversion. The output of this program appears on standard output in
 YUV4MPEG2 format, and can, for example, be fed to MPlayer.
+
+%description -l pl
+Niektóre kana³y dostarczaj± sygna³ telewizyjny niezgodny ze
+standardami. Zwykle brakuje mu sygna³ów synchronizacji, jest odwracany
+w losowych chwilach, czasem nawet zawiera dezinformacjê. Sygna³y te
+nie mog± byæ wygodnie ogl±dane w normalnym telewizorze. Uk³ad Booktree
+87[89](A) ma specjalny tryb, w którym nie daje siê oszukaæ z powodu
+brakuj±cych sygna³ów synchronizacji. Niniejszy program w³±cza ten tryb
+podobnie jak cabletv i czynui specjalne zabiegi, aby utrzymywaæ
+stabilny obraz i dostosowywaæ siê do odwracania sygna³u. Program
+podaje sygna³ wyj¶ciowy na standardowe wyj¶cie w formacie YUV4MPEG2,
+który mo¿e byæ nastêpnie przekazany np. do MPlayera.
 
 %prep
 %setup -q
