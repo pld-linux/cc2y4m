@@ -1,4 +1,3 @@
-# TODO: optflags
 Summary:	Translates broken PAL signals to YUV4MPEG2
 Summary(pl):	T³umaczenie zepsutych sygna³ów PAL na YUV4MPEG2
 Name:		cc2y4m
@@ -10,6 +9,7 @@ Source0:	http://cube.dyndns.org/~rsnel/cc2y4m/%{name}-%{version}.tar.gz
 # Source0-md5:	8e15d4baa67cb31340267bbe44f5970a
 URL:		http://cube.dyndns.org/~rsnel/cc2y4m/
 BuildRequires:	bison
+BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,7 +40,8 @@ który mo¿e byæ nastêpnie przekazany np. do MPlayera.
 
 %build
 %{__make} \
-	CC="%{__cc}"
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -DVERSION=\"$(VERSION)\""
 
 %install
 rm -rf $RPM_BUILD_ROOT
