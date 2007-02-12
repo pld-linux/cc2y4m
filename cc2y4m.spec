@@ -1,5 +1,5 @@
 Summary:	Translates broken PAL signals to YUV4MPEG2
-Summary(pl.UTF-8):   Tłumaczenie zepsutych sygnałów PAL na YUV4MPEG2
+Summary(pl.UTF-8):	Tłumaczenie zepsutych sygnałów PAL na YUV4MPEG2
 Name:		cc2y4m
 Version:	0.0.12
 Release:	1
