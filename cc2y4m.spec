@@ -1,5 +1,5 @@
 Summary:	Translates broken PAL signals to YUV4MPEG2
-Summary(pl):	T³umaczenie zepsutych sygna³ów PAL na YUV4MPEG2
+Summary(pl.UTF-8):   TÅ‚umaczenie zepsutych sygnaÅ‚Ã³w PAL na YUV4MPEG2
 Name:		cc2y4m
 Version:	0.0.12
 Release:	1
@@ -23,17 +23,17 @@ special measures to keep the image stable and adjust for the
 inversion. The output of this program appears on standard output in
 YUV4MPEG2 format, and can, for example, be fed to MPlayer.
 
-%description -l pl
-Niektóre kana³y dostarczaj± sygna³ telewizyjny niezgodny ze
-standardami. Zwykle brakuje mu sygna³ów synchronizacji, jest odwracany
-w losowych chwilach, czasem nawet zawiera dezinformacjê. Sygna³y te
-nie mog± byæ wygodnie ogl±dane w normalnym telewizorze. Uk³ad Booktree
-87[89](A) ma specjalny tryb, w którym nie daje siê oszukaæ z powodu
-brakuj±cych sygna³ów synchronizacji. Niniejszy program w³±cza ten tryb
-podobnie jak cabletv i czynui specjalne zabiegi, aby utrzymywaæ
-stabilny obraz i dostosowywaæ siê do odwracania sygna³u. Program
-podaje sygna³ wyj¶ciowy na standardowe wyj¶cie w formacie YUV4MPEG2,
-który mo¿e byæ nastêpnie przekazany np. do MPlayera.
+%description -l pl.UTF-8
+NiektÃ³re kanaÅ‚y dostarczajÄ… sygnaÅ‚ telewizyjny niezgodny ze
+standardami. Zwykle brakuje mu sygnaÅ‚Ã³w synchronizacji, jest odwracany
+w losowych chwilach, czasem nawet zawiera dezinformacjÄ™. SygnaÅ‚y te
+nie mogÄ… byÄ‡ wygodnie oglÄ…dane w normalnym telewizorze. UkÅ‚ad Booktree
+87[89](A) ma specjalny tryb, w ktÃ³rym nie daje siÄ™ oszukaÄ‡ z powodu
+brakujÄ…cych sygnaÅ‚Ã³w synchronizacji. Niniejszy program wÅ‚Ä…cza ten tryb
+podobnie jak cabletv i czynui specjalne zabiegi, aby utrzymywaÄ‡
+stabilny obraz i dostosowywaÄ‡ siÄ™ do odwracania sygnaÅ‚u. Program
+podaje sygnaÅ‚ wyjÅ›ciowy na standardowe wyjÅ›cie w formacie YUV4MPEG2,
+ktÃ³ry moÅ¼e byÄ‡ nastÄ™pnie przekazany np. do MPlayera.
 
 %prep
 %setup -q
